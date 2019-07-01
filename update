@@ -7,6 +7,5 @@ git commit -m "."
 spawn git push origin master
 expect  "Enter passphrase for key '/home/k/.ssh/id_rsa':"
 send "K28lqp8bt"
-expect eof
 EOF
 
