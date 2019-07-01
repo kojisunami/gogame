@@ -1,5 +1,6 @@
 #!/bin/bash
 
+git rm --cache *\.o tags tags.lock update
 git add  `git status  | grep modified | awk '{print $2}'`
 git commit -m "."
 
