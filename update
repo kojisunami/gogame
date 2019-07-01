@@ -3,10 +3,9 @@
 git add  `git status  | grep modified | awk '{print $2}'`
 git commit -m "."
 
-git push origin master
-#/usr/bin/expect << EOF
-#spawn git push origin master
-#expect  "Enter passphrase for key '/home/k/.ssh/id_rsa':"
-#send "K28lqp8bt"
-#EOF
+/usr/bin/expect << EOF
+spawn git push origin master
+expect  "Enter passphrase for key '/home/k/.ssh/id_rsa':"
+send "K28lqp8bt"
+EOF
 
