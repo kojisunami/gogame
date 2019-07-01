@@ -1,2 +1,2 @@
 
-what a hell world!
+ hell world
