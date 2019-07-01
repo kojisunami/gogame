@@ -1,8 +1,0 @@
-#!/bin/bash
-
-git rm --cached *\.o tags tags.lock update
-git add  `git status  | grep modified | awk '{print $2}'`
-git commit -m "."
-
-git push origin master
-
